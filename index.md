@@ -39,19 +39,19 @@ style: |
     }
     @font-face {
         font-family: 'Symbola';
-        src: url('Symbola602.otf') format('truetype');
+        src: url('Symbola602.otf') format('opentype');
     }
     @font-face {
         font-family: 'Fira Mono';
-        src: url('FiraMonoOT-Regular.otf') format('truetype');
+        src: url('FiraMonoOT-Regular.otf') format('opentype');
     }
     @font-face {
         font-family: 'Fira Sans Light';
-        src: url('FiraSansOT-Light.otf') format('truetype');
+        src: url('FiraSansOT-Light.otf') format('opentype');
     }
     @font-face {
         font-family: 'Fira Sans Regular';
-        src: url('FiraSansOT-Regular.otf') format('truetype');
+        src: url('FiraSansOT-Regular.otf') format('opentype');
     }
     @font-face {
         font-family: 'Fira Sans Medium';
@@ -485,7 +485,7 @@ SELECT fullwidth( PINYIN_UPCASE(entry) ) FROM moe;
 ## Finished in 24 hours!
 {:.autosize}
 
-Thanks to: Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, Daniel Liang, Grey Lee, Irvin Chen, Gugod, Schee…
+Thanks to: ___Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, Daniel Liang, Grey Lee, Irvin Chen, Gugod, Schee…___
 ![](pictures/unimap.png)
 
 ## 粗略の共識<br>進擊の程式
