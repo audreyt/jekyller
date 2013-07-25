@@ -666,7 +666,7 @@ Thanks to: ___Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, 
 ## Finished over lunch!
 {:.autosize}
 
-Thanks to: @happyman, @Irvin, @hit1205, @MissleTW, @YuerLee, @YuanChao, @clkao, @MGDesigner, @gontera…
+Thanks to: ___@happyman, @Irvin, @hit1205, @MissleTW, @YuerLee, @YuanChao, @clkao, @MGDesigner, @gontera…___
 ![](pictures/3du-plurk.png)
 
 ## Database received, 2013.3.27.
