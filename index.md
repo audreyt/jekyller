@@ -94,16 +94,18 @@ style: |
     }
     span[style="color:#710"] {
         color: #800 !important;
-        background: #fff !important;
+        background: #fafafa !important;
     }
 
     span[style="color:#D20"] {
         color: #800 !important;
         background: #ffe !important;
+        border-radius: 3px !important;
     }
     span[style="color:#F00;background-color:#FAA"] {
         color: #000 !important;
         background: #ffe !important;
+        border-radius: 3px !important;
     }
     h2 code {
         background: transparent !important;
