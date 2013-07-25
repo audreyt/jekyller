@@ -15,7 +15,7 @@ style: |
         margin-left: 0;
         margin-top: 0;
         font-weight: normal;
-        font-family: 'Fira Sans Regular', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
+        font-family: 'Fira Sans Regular', 'Fira Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
     }
     #thank-you > div, #answer > div {
         padding-top: 64px !important;
@@ -42,20 +42,20 @@ style: |
         src: url('Symbola602.otf') format('truetype');
     }
     @font-face {
-        font-family: 'Ubuntu Mono';
-        src: url('UbuntuMono-R.ttf') format('truetype');
+        font-family: 'Fira Mono';
+        src: url('FiraMonoOT-Regular.otf') format('truetype');
     }
     @font-face {
         font-family: 'Fira Sans Light';
-        src: url('FeuraSans-Light.ttf') format('truetype');
+        src: url('FiraSansOT-Light.otf') format('truetype');
     }
     @font-face {
         font-family: 'Fira Sans Regular';
-        src: url('FeuraSans-Regular.ttf') format('truetype');
+        src: url('FiraSansOT-Regular.otf') format('truetype');
     }
     @font-face {
         font-family: 'Fira Sans Medium';
-        src: url('FeuraSans-Medium.ttf') format('truetype');
+        src: url('FiraSansOT-Medium.otf') format('truetype');
     }
     @font-face {
         font-family: 'EBAS';
@@ -110,7 +110,10 @@ style: |
     h2 code {
         background: transparent !important;
         font-weight: normal;
-        font-family: 'Ubuntu Mono', 'Consolas', 'Menlo', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", monospace !important;
+        font-family: 'Fira Mono', 'Ubuntu Mono', 'Consolas', 'Menlo', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", monospace !important;
+        font-feature-settings: "zero", "kern";
+        -moz-font-feature-settings: "zero", "kern";
+        -webkit-font-feature-settings: "zero", "kern";
         color: #666 !important;
     }
 
@@ -135,7 +138,10 @@ style: |
     }
     pre, .slide code {
         white-space: pre !important;
-        font-family: 'Ubuntu Mono', 'Consolas', 'Menlo', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", monospace !important;
+        font-family: 'Fira Mono', 'Consolas', 'Menlo', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", monospace !important;
+        font-feature-settings: "zero", "kern", "liga" off;
+        -moz-font-feature-settings: "zero", "kern", "liga" off;
+        -webkit-font-feature-settings: "zero", "kern", "liga" off;
         }
     pre .line-numbers { display: none }
     body .slide:after { display: none }
@@ -163,19 +169,19 @@ style: |
     figcaption {
         color: #333;
         font-weight: bold;
-        font-family: 'Fira Sans Medium', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
+        font-family: 'Fira Sans Medium', 'Fira Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
     }
     .slide h2 {
         color: #444;
         margin-left: -10px;
         font-weight: 100; /* Light */
-        font-family: 'Fira Sans Light', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
+        font-family: 'Fira Sans Light', 'Fira Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
         font-feature-settings: "zero", "liga", "dlig", "kern";
         -moz-font-feature-settings: "zero", "liga", "dlig", "kern";
         -webkit-font-feature-settings: "zero", "liga", "dlig", "kern";
     }
     .slide ul, p {
-        font-family: 'Fira Sans Regular', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
+        font-family: 'Fira Sans Regular', 'Fira Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
         font-feature-settings: "tnum", "zero", "liga", "kern";
         -moz-font-feature-settings: "tnum", "zero", "liga", "kern";
         -webkit-font-feature-settings: "tnum", "zero", "liga", "kern";
@@ -195,7 +201,7 @@ style: |
     }
     .slide ul li strong, .slide ol li strong, b {
         color: #B00;
-        font-family: 'Fira Sans Medium', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
+        font-family: 'Fira Sans Medium', 'Fira Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
     }
     .shout {
         background: #eee;
@@ -255,9 +261,9 @@ style: |
   "bopomofo": "ㄇㄥˊ",
   "pinyin":   "méng",
   "definitions": [
-    { "type": "名", "def": "草木初生的芽。" },
-    { "type": "名", "def": "事物發生的開端或徵兆。" },
-    { "type": "名", "def": "人民。" } ] }
+    {"type": "名", "def": "草木初生的芽。"},
+    {"type": "名", "def": "事物發生的開端或徵兆。"},
+    {"type": "名", "def": "人民。"} ] }
 ~~~
 
 ## PostgreSQL
@@ -265,10 +271,10 @@ style: |
 ~~~ sql
 CREATE TABLE moe ( "entry" JSON );
 INSERT INTO moe VALUES ($$
-{ "title":"萌", "bopomofo": "ㄇㄥˊ", "pinyin": "méng",
-  "definitions": [ { "type": "名", "def": "草木初生的芽。" },
-                   { "type": "名", "def": "事物發生的開端或徵兆。" },
-                   { "type": "名", "def": "人民。" } ] } $$);
+{"title":"萌", "bopomofo": "ㄇㄥˊ", "pinyin": "méng",
+ "definitions": [{"type": "名", "def": "草木初生的芽"},
+                 {"type": "名", "def": "事物發生的開端或徵兆"},
+                 {"type": "名", "def": "人民。"}]} $$);
 
 INSERT INTO moe VALUES ('這不是 ㄓㄟ ㄙㄣˇ'); -- type error
 ~~~
@@ -277,9 +283,10 @@ INSERT INTO moe VALUES ('這不是 ㄓㄟ ㄙㄣˇ'); -- type error
 
 ~~~ sql
 CREATE EXTENSION plv8;
-CREATE FUNCTION get_json_key(obj JSON, key TEXT) returns JSON AS $$
-   return JSON.stringify( obj[key] );
-$$ LANGUAGE plv8;
+CREATE FUNCTION get_json_key(obj JSON, key TEXT)
+  returns JSON AS $$
+    return JSON.stringify( obj[key] );
+  $$ LANGUAGE plv8;
 
 SELECT get_json_key(entry, 'bopomofo') FROM moe;
 -- "ㄇㄥˊ"
@@ -306,7 +313,8 @@ plv8x -E 'require "uax11" .toFullwidth "méng"'
 ~~~
 
 ~~~ sql
-SELECT entry ~> 'require "uax11" .toFullwidth @pinyin' FROM moe;
+SELECT entry ~> 'require "uax11" .toFullwidth @pinyin'
+  FROM moe;
 -- "ｍｅ́ｎｇ"
 ~~~
 
