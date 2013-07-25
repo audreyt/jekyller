@@ -136,6 +136,9 @@ style: |
     body .shout br {
         line-height: 175%;
     }
+    body .slide code {
+        background-color: #FAFAC2;
+    }
     pre, .slide code {
         white-space: pre !important;
         font-family: 'Fira Mono', 'Consolas', 'Menlo', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", monospace !important;
@@ -174,11 +177,13 @@ style: |
     .slide h2 {
         color: #444;
         margin-left: -10px;
+    }
+    .slide h2, .slide strong em {
         font-weight: 100; /* Light */
         font-family: 'Fira Sans Light', 'Fira Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
-        font-feature-settings: "zero", "liga", "dlig", "kern";
-        -moz-font-feature-settings: "zero", "liga", "dlig", "kern";
-        -webkit-font-feature-settings: "zero", "liga", "dlig", "kern";
+        font-feature-settings: "zero", "liga", "dlig", "kern" on;
+        -moz-font-feature-settings: "zero", "liga", "dlig", "kern" on;
+        -webkit-font-feature-settings: "zero", "liga", "dlig", "kern" on;
     }
     .slide ul, p {
         font-family: 'Fira Sans Regular', 'Fira Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
@@ -198,6 +203,10 @@ style: |
         padding-right: 10px;
         font-size: 30px;
         line-height: 20px;
+    }
+    .slide strong em {
+        color: #333;
+        font-style: normal;
     }
     .slide ul li strong, .slide ol li strong, b {
         color: #B00;
@@ -409,7 +418,7 @@ SELECT fullwidth( PINYIN_UPCASE(entry) ) FROM moe;
 ![](pictures/3du.jpg)
 <!-- by Kanko, https://secure.flickr.com/photos/kankan/134663487/ -->
 
-## The Revised MoE Dictionary (1994)
+## Revised MoE Dictionary (1994)
 
 ![](pictures/gxcd.jpg)
 
@@ -459,11 +468,11 @@ SELECT fullwidth( PINYIN_UPCASE(entry) ) FROM moe;
 
 ## g0v hackath1n, 2013.1.27.
 
-* …Scrape 2741 idioms as **HTML** (@TonyQ, @MnO2)
-* …Scrape 3000 characters as raw **HTML** (@au)
-* …Design **JSON schema** from samples (@pingooo)
-* …Design **SQL schema** from samples (@albb0920)
-* …**Parse** HTML into JSON & SQLite (@kcwu)
+* …Scrape 2741 idioms as **HTML** ___(@TonyQ, @MnO2)___
+* …Scrape 3000 characters as raw **HTML** ___(@au)___
+* …Design **JSON schema** from samples ___(@pingooo)___
+* …Design **SQL schema** from samples ___(@albb0920)___
+* …**Parse** HTML into JSON & SQLite ___(@kcwu)___
 * ……and for those **24x24 bitmaps**...
 
 ## `←`&#x1f01d; `Big-5`<br>`→`&#x1f00e; `UTF-8`
@@ -484,30 +493,30 @@ Thanks to: Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, Dan
 
 ## Applications
 
-* <strong>**XUL**</strong> Desktop App (@racklin)
-* **OS X** Dictionary (@yllan)
-* **Windows 8** App (@wenpei)
-* **iOS** Client (@tomjpsun, @jamessa, @pct)
-* **iOS** Offline App (@zonble)
+* <strong>**XUL**</strong> Desktop App ___(@racklin)___
+* **OS X** Dictionary ___(@yllan)___
+* **Windows 8** App ___(@wenpei)___
+* **iOS** Client ___(@tomjpsun, @jamessa, @pct)___
+* **iOS** Offline App ___(@zonble)___
  
 ## Integrations
 
-* <strong>**Rails**</strong> API server (@albb0920)
-* **AngularJS** Client+Server (@viirya)
-* **Chrome** Extension (@tonytonyjan)
-* **Sublime Text** plugin (@zonble)
-* **WinRT** Component (@eriksk)
+* <strong>**Rails**</strong> API server ___(@albb0920)___
+* **AngularJS** Client+Server ___(@viirya)___
+* **Chrome** Extension ___(@tonytonyjan)___
+* **Sublime Text** plugin ___(@zonble)___
+* **WinRT** Component ___(@eriksk)___
 
 ## Fair Use
 
 <figure markdown="1">
-> 為非營利之教育目的，依著作權法第 50 條，「以中央或地方機關或公法人之名義公開發表之著作，在合理範圍內，得重製、公開播送或公開傳輸。」此處轉換格式、重新編排的編輯著作權(如果有的話)由 @kcwu 以 `CC0` 釋出。
+> 為非營利之教育目的，依著作權法第 50 條，「以中央或地方機關或公法人之名義公開發表之著作，在合理範圍內，得重製、公開播送或公開傳輸。」此處轉換格式、重新編排的編輯著作權(如果有的話)由 ___@kcwu___ 以 `CC0` 釋出。
 </figure>
 
 ## CC0: Public Domain
 
 <figure markdown="1">
-> 除前述資料檔之外，本目錄下的所有其他檔案，由作者 唐鳳 在法律許可的範圍內，拋棄該著作依著作權法所享有之權利，包括所有相關與鄰接的法律權利，並宣告將該著作貢獻至公眾領域。
+> 除前述資料檔之外，本目錄下的所有其他檔案，由作者 ___唐鳳___ 在法律許可的範圍內，拋棄該著作依著作權法所享有之權利，包括所有相關與鄰接的法律權利，並宣告將該著作貢獻至公眾領域。
 </figure>
 
 ## moedict.tw
@@ -532,7 +541,7 @@ Thanks to: Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, Dan
 
 ## Web Fonts for Private-Use Area
 
-* Initially based on **Hán Nôm** font (@YaoWei)
+* Initially based on **Hán Nôm** font ___(@YaoWei)___
     * Subset everything outside Big5 range
     * **Hand-drawn** PUA chars like `⿰亻壯`
 * …Later on, switched to **Hanazono** 花園明朝 font
@@ -607,10 +616,10 @@ Thanks to: Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, Dan
 
 ## User-Driven Development
 
-* Wildcard and **part-of-word** searching (@esor)
-* …Two-column layout for **tablets** (@hlb)
-* …**Toggle** between Pinyin and Bopomofo (@matic)
-* …**Simplified** character lookup (@xiaofang)
+* Wildcard and **part-of-word** searching ___(@esor)___
+* …Two-column layout for **tablets** ___(@hlb)___
+* …**Toggle** between Pinyin and Bopomofo ___(@matic)___
+* …**Simplified** character lookup ___(@xiaofang)___
 * …Top Request: **Taiwanese Bân-lâm-gi**
 
 ## twblg.moedict.tw
@@ -717,11 +726,11 @@ curl $MOE/collections/entries?q={"部首":"一"}&c=1
 pgrest dbname
 export MOE=http://127.0.0.1:3000
 curl -i -X PUT -H "Content-Type: text/csv" \
-     --data-binary @uni/詞目總檔.csv $MOE/collections/entries
+   --data-binary @uni/詞目總檔.csv $MOE/collections/entries
 
 curl $MOE/collections/entries
-# [{"主編號","1","屬性":"1","詞目":"一","音讀":"tsi̍t",
-#   "文白俗替":"替","部首":"一","部首序":"001-00-01","方言差":""}]
+[{"主編號","1","屬性":"1","詞目":"一","音讀":"tsi̍t",
+  "文白俗替":"替","部首":"一","部首序":"001-00-01","方言差":""}]
 ~~~
 
 ## PgREST: 3du.tw JSON in 48 lines 
@@ -737,7 +746,7 @@ curl $MOE/collections/entries
 
 ## g0v prehackath3n, 2013.5.23.
 
-<b>English, French & German</b> translations! (@a-tsioh)
+<b>English, French & German</b> translations! ___(@a-tsioh)___
 <a target="_blank" href="https://www.moedict.tw/#外文">![](pictures/def-xref.png)</a>
 
 ## Blackout, 2013.6.4.
@@ -747,7 +756,7 @@ curl $MOE/collections/entries
 
 ## g0v hackath3n, 2013.6.8.
 
-<b>Hakka</b> Dictionary with **14k** entries! (@a-tsioh, @pcchen)
+<b>Hakka</b> Dictionary with **14k** entries! ___(@a-tsioh, @pcchen)___
 <a target="_blank" href="https://www.moedict.tw/#:%E5%AF%A7%E8%B3%A3%E7%A5%96%E5%AE%97%E7%94%B0%EF%BC%8C%E4%B8%8D%E5%BF%98%E7%A5%96%E5%AE%97%E8%A8%80%EF%BC%9B%E5%AF%A7%E8%B3%A3%E7%A5%96%E5%AE%97%E5%9D%91%EF%BC%8C%E4%B8%8D%E5%BF%98%E7%A5%96%E5%AE%97%E8%81%B2">![](pictures/hakka-demo.png)</a>
 
 ## Lessons Learned
