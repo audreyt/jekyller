@@ -13,13 +13,13 @@ style: |
     }
     #thank-you h2, #answer h2 {
         font-weight: normal;
-        font-family: 'Fira Sans Regular', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
+        font-family: 'Fira Sans Regular', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
     }
     #thank-you > div, #answer > div {
         padding-top: 64px !important;
     }
     #g0v-openhack h2 {
-        margin-top: 70px;
+        margin-top: 90px;
         margin-left: -35px;
     }
     #blackout h2 {
@@ -50,6 +50,10 @@ style: |
     @font-face {
         font-family: 'Fira Sans Regular';
         src: url('FeuraSans-Regular.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'Fira Sans Medium';
+        src: url('FeuraSans-Medium.ttf') format('truetype');
     }
     @font-face {
         font-family: 'EBAS';
@@ -100,7 +104,7 @@ style: |
     h2 code {
         background: transparent !important;
         font-weight: normal;
-        font-family: 'Ubuntu Mono', 'Consolas', 'Menlo', "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", monospace !important;
+        font-family: 'Ubuntu Mono', 'Consolas', 'Menlo', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", monospace !important;
         color: #666 !important;
     }
 
@@ -114,7 +118,7 @@ style: |
     body .shout h2 {
         color: #222;
         font-weight: 600 !important;
-        font-family: "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif !important;
+        font-family: "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif !important;
     }
     body .shout code {
         background: transparent;
@@ -123,9 +127,9 @@ style: |
     body .shout br {
         line-height: 175%;
     }
-    pre {
+    pre, .slide code {
         white-space: pre !important;
-        font-family: 'Ubuntu Mono', 'Consolas', 'Menlo', "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", monospace !important;
+        font-family: 'Ubuntu Mono', 'Consolas', 'Menlo', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", monospace !important;
         }
     pre .line-numbers { display: none }
     body .slide:after { display: none }
@@ -153,13 +157,13 @@ style: |
     .slide h2 {
         margin-left: -10px;
         font-weight: 100; /* Light */
-        font-family: 'Fira Sans Light', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
+        font-family: 'Fira Sans Light', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
         font-feature-settings: "zero", "liga", "dlig", "kern";
         -moz-font-feature-settings: "zero", "liga", "dlig", "kern";
         -webkit-font-feature-settings: "zero", "liga", "dlig", "kern";
     }
     .slide ul, p {
-        font-family: 'Fira Sans Regular', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
+        font-family: 'Fira Sans Regular', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
         font-feature-settings: "tnum", "zero", "liga", "kern";
         -moz-font-feature-settings: "tnum", "zero", "liga", "kern";
         -webkit-font-feature-settings: "tnum", "zero", "liga", "kern";
@@ -179,6 +183,7 @@ style: |
     }
     .slide ul li strong, .slide ol li strong, b {
         color: #c00;
+        font-family: 'Fira Sans Medium', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
     }
     .shout {
         background: #eee;
@@ -531,7 +536,7 @@ Thanks to: Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, Dan
 
 ## Chinese Segmentation
 
-* Therearenowhitespacesbetweenwords
+* ThereAreNoWhitespacesBetweenWords
 * …Lots of **heuristic** algorithms
 * …Naive solution: **Longest-token** match
     * …Requires a large dictionary
@@ -659,7 +664,7 @@ Thanks to: @happyman, @Irvin, @hit1205, @MissleTW, @YuerLee, @YuanChao, @clkao, 
 > 因此華語對應這個欄位，我們是藏在系統中。<br>
 > 如果是民間的辭典編輯，會比較沒有這個負擔，因此我這裡確實不能給，非常希望你們能有辦法解決。
 
-## .…it's all good.
+## ..it's all good.
 
 > 好的，感謝您的提醒和協助。<br>
 > 目前從網頁以 Big5 範圍取出的華語條目，<br>
