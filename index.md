@@ -158,6 +158,11 @@ style: |
         text-rendering: optimizeLegibility;
         background: url("themes/ribbon/images/ribbon.svg") no-repeat scroll 865px 0 #fafafa;
     }
+    figcaption {
+        color: #333;
+        font-weight: bold;
+        font-family: 'Fira Sans Medium', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
+    }
     .slide h2 {
         color: #444;
         margin-left: -10px;
@@ -418,7 +423,7 @@ SELECT fullwidth( PINYIN_UPCASE(entry) ) FROM moe;
 
 <figure markdown="1">
 > 本會非常歡迎各位來連結「國語辭典」，但是本會目前只開放以超連結 (hyperlink) 的方式與國語辭典 **首頁** 連結，至於其他方式本會並未對外開放授權。若還有疑問或建議，歡迎來信。 
-<figcaption>／教育部國語推行委員會〈有關授權〉</figcaption>
+<figcaption>／教育部國語推行委員會 〈有關授權〉</figcaption>
 </figure>
 
 ## .…and the Very Crazy
@@ -432,7 +437,7 @@ SELECT fullwidth( PINYIN_UPCASE(entry) ) FROM moe;
 
 <figure markdown="1">
 > 所以我要 **響應** 零時政府 g0v.tw 的活動，來做 3du.tw，把字、詞、成語、定義、例句等等正體中文資料，用開放的文字 API 釋放出來，加上索引和搜尋的功能，讓任何想加值的個人或公司都可以使用。 
-<figcaption>／葉平〈還文於民〉</figcaption>
+<figcaption>／葉平 〈還文於民〉</figcaption>
 </figure>
 
 ## Hackpad for 3du.tw
@@ -772,7 +777,7 @@ curl $MOE/collections/entries
 > 正在綴滿沒有遮攔的天空。<br>
 > 那是五千年的象形文字，<br>
 > 那是未來人們凝視的眼睛。
-<figcaption>／北島〈回答〉</figcaption>
+<figcaption>／北島 〈回答〉</figcaption>
 </figure>
 ![](pictures/stars.jpg)
 <!-- by-nc-sa orkomedix, https://secure.flickr.com/photos/orkomedix/6812055939 -->
