@@ -11,6 +11,10 @@ style: |
         font-weight: normal;
         font-family: 'EBAS';
     }
+    #thank-you h2, #answer h2 {
+        font-weight: normal;
+        font-family: 'Fira Sans Regular', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
+    }
     #thank-you > div, #answer > div {
         padding-top: 64px !important;
     }
@@ -40,8 +44,12 @@ style: |
         src: url('UbuntuMono-R.ttf') format('truetype');
     }
     @font-face {
-        font-family: 'Ubuntu';
-        src: url('Ubuntu-R.ttf') format('truetype');
+        font-family: 'Fira Sans Light';
+        src: url('FeuraSans-Light.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'Fira Sans Regular';
+        src: url('FeuraSans-Regular.ttf') format('truetype');
     }
     @font-face {
         font-family: 'EBAS';
@@ -57,7 +65,6 @@ style: |
         text-align: center;
         color: #FFF;
         font-size: 150%;
-        font-family: 'Ubuntu Mono', monospace;
         }
         #_ p a {
             text-decoration: none;
@@ -72,8 +79,9 @@ style: |
         }
     #big5-utf8.shout div h2 {
         font-family: 'Symbola' !important;
+        font-weight: normal !important;
     }
-    #twblg code {
+    #twblg h2 {
         display: none;
     }
     span[style="color:#710"] {
@@ -92,7 +100,7 @@ style: |
     h2 code {
         background: transparent !important;
         font-weight: normal;
-        font-family: 'Ubuntu Mono', 'Consolas', 'Menlo', monospace !important;
+        font-family: 'Ubuntu Mono', 'Consolas', 'Menlo', "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", monospace !important;
         color: #666 !important;
     }
 
@@ -105,7 +113,8 @@ style: |
         }
     body .shout h2 {
         color: #222;
-        font-weight: normal;
+        font-weight: 600 !important;
+        font-family: "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif !important;
     }
     body .shout code {
         background: transparent;
@@ -116,7 +125,7 @@ style: |
     }
     pre {
         white-space: pre !important;
-        font-family: 'Ubuntu Mono', 'Consolas', 'Menlo', monospace !important;
+        font-family: 'Ubuntu Mono', 'Consolas', 'Menlo', "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", monospace !important;
         }
     pre .line-numbers { display: none }
     body .slide:after { display: none }
@@ -137,8 +146,23 @@ style: |
         vertical-align: top;
     }
 
+    .slide {
+        text-rendering: optimizeLegibility;
+        background-color: #fafafa;
+    }
+    .slide h2 {
+        margin-left: -10px;
+        font-weight: 100; /* Light */
+        font-family: 'Fira Sans Light', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
+        font-feature-settings: "zero", "liga", "dlig", "kern";
+        -moz-font-feature-settings: "zero", "liga", "dlig", "kern";
+        -webkit-font-feature-settings: "zero", "liga", "dlig", "kern";
+    }
     .slide ul, p {
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Fira Sans Regular', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
+        font-feature-settings: "tnum", "zero", "liga", "kern";
+        -moz-font-feature-settings: "tnum", "zero", "liga", "kern";
+        -webkit-font-feature-settings: "tnum", "zero", "liga", "kern";
     }
     .slide ul li, .slide ol li {
         font-size: 140%;
@@ -312,12 +336,12 @@ SELECT fullwidth( PINYIN_UPCASE(entry) ) FROM moe;
 
 ![](pictures/g0v-burn.png)
 
-## `budget.g0v.tw`
+## budget.g0v.tw
 {:#g0v-prototype}
 
 ![](pictures/g0v-prototype.png)
 
-## `budget.g0v.tw`
+## budget.g0v.tw
 {:#g0v-50k}
 
 ![](pictures/g0v-50k.png)
@@ -340,12 +364,12 @@ SELECT fullwidth( PINYIN_UPCASE(entry) ) FROM moe;
 * …第貳次**九大建設**黑客松
 * …第參次**客廳工廠**黑客松
 
-## `g0v.tw/about.html`
+## g0v.tw/about.html
 {:#g0v-about}
 
 <a target="_blank" href="http://g0v.tw/about.html">![](pictures/g0v-about.png)</a>
 
-## `g0v.tw/about.html`
+## g0v.tw/about.html
 {:#g0v-tldr}
 
 <a target="_blank" href="http://g0v.tw/about.html">![](pictures/g0v-tldr.png)</a>
@@ -355,7 +379,7 @@ SELECT fullwidth( PINYIN_UPCASE(entry) ) FROM moe;
 
 ![](pictures/g0v-decentralization.png)
 
-## `3du.tw`
+## 3du.tw
 {:.cover #3du}
 ![](pictures/3du.jpg)
 <!-- by Kanko, https://secure.flickr.com/photos/kankan/134663487/ -->
@@ -461,7 +485,7 @@ Thanks to: Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, Dan
 > 除前述資料檔之外，本目錄下的所有其他檔案，由作者 唐鳳 在法律許可的範圍內，拋棄該著作依著作權法所享有之權利，包括所有相關與鄰接的法律權利，並宣告將該著作貢獻至公眾領域。
 </figure>
 
-## `moedict.tw`
+## moedict.tw
 {:.cover #moedict}
 ![](pictures/moedict.png)
 
@@ -528,7 +552,7 @@ Thanks to: Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, Dan
     * …Needs a tool to **move JS into DB**
     * …...wait, we just got one here
 
-## `/a/文字.json`
+## /a/文字.json
 {:.wrap}
 
 ~~~ json
@@ -543,7 +567,6 @@ Thanks to: Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, Dan
 {:.vertical-top}
 
 ![](pictures/drobo.jpg)
-(@obra++)
 
 ## Let's PhoneGap it!
 
@@ -565,7 +588,7 @@ Thanks to: Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, Dan
 * …**Simplified** character lookup (@xiaofang)
 * …Top Request: **Taiwanese Bân-lâm-gi**
 
-## `twblg.moedict.tw`
+## twblg.moedict.tw
 {:.cover #twblg}
 ![](pictures/seeking.jpg)
 
@@ -578,10 +601,9 @@ Thanks to: Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, Dan
     * …But only Mandarin had a **writing system**
     * …Editing her **memoir** brought back memories
 
-## Taiwan Bân-lâm-gi Common Dictionary
+## MoE Bân-lâm-gi Dictionary (2011)
 {:.vertical-top}
 ![](pictures/twblg.jpg)
-(MoE, 2011)
 
 ## Good Parts
 
@@ -603,7 +625,7 @@ Thanks to: Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, Dan
 
 ![](pictures/twblg-request.jpg)
 
-## Crowd-OCR for 154 glyphs, 2013.3.25.
+## Crowd-OCR: 154 glyphs, 2013.3.25.
 
 ![](pictures/3du-holohak.png)
 
@@ -622,7 +644,7 @@ Thanks to: @happyman, @Irvin, @hit1205, @MissleTW, @YuerLee, @YuanChao, @clkao, 
 * `詞彙方言差.xls` `語音方言差.xls`
 * `例句.xls`
 
-## .…What about that extra request?
+## ..What about that extra request?
 
 > 您好：<br>
 > 資料匯入目前大致無誤。不過，twblg 網頁上的「華語檢索」，可以用「一乾二淨」找到閩語典的「離離」條目，這個對照表似乎沒有在 Excel 檔中看到？
