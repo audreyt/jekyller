@@ -12,6 +12,8 @@ style: |
         font-family: 'EBAS';
     }
     #thank-you h2, #answer h2 {
+        margin-left: 0;
+        margin-top: 0;
         font-weight: normal;
         font-family: 'Fira Sans Regular', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
     }
@@ -78,9 +80,11 @@ style: |
     .wrap pre {
         white-space: normal !important
     }
-    .cover h2 {
-        color:#FFF;
-        }
+    .slide.cover h2 {
+        color: #EEE;
+        margin-top: -30px;
+        margin-left: -40px;
+    }
     #big5-utf8.shout div h2 {
         font-family: 'Symbola' !important;
         font-weight: normal !important;
@@ -152,9 +156,10 @@ style: |
 
     .slide {
         text-rendering: optimizeLegibility;
-        background-color: #fafafa;
+        background: url("themes/ribbon/images/ribbon.svg") no-repeat scroll 865px 0 #fafafa;
     }
     .slide h2 {
+        color: #444;
         margin-left: -10px;
         font-weight: 100; /* Light */
         font-family: 'Fira Sans Light', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
@@ -182,7 +187,7 @@ style: |
         line-height: 20px;
     }
     .slide ul li strong, .slide ol li strong, b {
-        color: #c00;
+        color: #B00;
         font-family: 'Fira Sans Medium', 'Feura Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
     }
     .shout {
@@ -407,7 +412,7 @@ SELECT fullwidth( PINYIN_UPCASE(entry) ) FROM moe;
 * …Requires **N clicks** to get to a definition
 * …Rare characters become **low-res bitmaps**
 * …Difficult to use on **mobile devices**
-* …"Optimized for **IE 5.0** and **Netscape 4.7+**"!?
+* …&#x201C;Optimized for **IE 5.0** and **Netscape 4.7+**&#x201D;!?
 
 ## The Sad
 
