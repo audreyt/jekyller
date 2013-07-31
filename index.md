@@ -12,8 +12,10 @@ style: |
         font-family: 'EBAS';
     }
     #_ p a {
-        font-family: 'G0V Logo';
-        font-size: 150%;
+        display: block;
+        margin-top: -100px;
+        font-family: 'G0V Logo', 'Fira Sans Light', sans-serif !important;
+        font-size: 180%;
     }
     #_ p {
         font-family: 'Fira Mono', 'Ubuntu Mono', 'Consolas', 'Menlo', "XinGothic-Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", monospace !important;
@@ -94,7 +96,7 @@ style: |
         margin-left: -40px;
     }
     #big5-utf8.shout div h2 {
-        font-family: 'G0V Logo' !important;
+        font-family: 'G0V Logo', 'Fira Sans Light', sans-serif !important;
         font-weight: normal !important;
     }
     #twblg h2 {
@@ -134,8 +136,8 @@ style: |
         }
     body .shout h2 {
         color: #222;
-        font-weight: 600 !important;
-        font-family: "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif !important;
+        font-weight: normal !important;
+        font-family: "Fira Sans Medium", "XinGothic-Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif !important;
     }
     body .shout code {
         background: transparent;
@@ -161,7 +163,7 @@ style: |
           box-shadow: 0em 0.2em 0.3em 0px #999999;
     }
     .slide img {
-        height: 400px;
+        height: 390px;
     }
     .slide blockquote img, .slide.autosize img {
         height: auto;
@@ -259,19 +261,20 @@ style: |
 
 # [萌典](https://moedict.tw/) {#_}
 
-[G](http://g0v.tw/) 零時政府
+[G](http://g0v.tw/)
 
 ![](pictures/stars.jpg)
 <!-- by-nc-sa orkomedix, https://secure.flickr.com/photos/orkomedix/6812055939 -->
 
-## 先講程式<br>再講故事
-{:.shout #first-code-then-stories}
+## g0v.tw
+{:#buzz}
+![](pictures/g0v.tw.png)
 
-## HTML
+## HTML ←
 
 ![](pictures/html.png)
 
-## JSON
+## JSON →
 
 ~~~ json
 { "title":    "萌",
@@ -283,143 +286,38 @@ style: |
     {"type": "名", "def": "人民。"} ] }
 ~~~
 
-## PostgreSQL
+## HTML5 ♡
+{:#html5-heart}
 
-~~~ sql
-CREATE TABLE moe ( "entry" JSON );
-INSERT INTO moe VALUES ($$
-{"title":"萌", "bopomofo": "ㄇㄥˊ", "pinyin": "méng",
- "definitions": [{"type": "名", "def": "草木初生的芽"},
-                 {"type": "名", "def": "事物發生的開端或徵兆"},
-                 {"type": "名", "def": "人民。"}]} $$);
+![](pictures/html5.png)
 
-INSERT INTO moe VALUES ('這不是 ㄓㄟ ㄙㄣˇ'); -- type error
+## 寫程式<br>改造社會
+{:.shout #g0v-slogan}
+
+## 拆政府<br>原地重建
+{:.shout #g0v-slogan-2}
+
+## Flash ←
+
+![](pictures/flash.png)
+
+## XML →
+
+~~~ xml
+<Word version="1.0" unicode="兆"><Stroke>
+  <Outline>
+    <MoveTo x="682.0" y="988.0" />
+    <QuadTo flexible="false" x1="684.0"
+            y1="961.0" x2="687.5" y2="921.5" />
+  </Outline>
+  <Track><MoveTo x="740.0" y="362.0" /></Track>
+</Stroke></Word>
 ~~~
 
-## PLV8
+## HTML5 ♡
+{:#canvas}
 
-~~~ sql
-CREATE EXTENSION plv8;
-CREATE FUNCTION get_json_key(obj JSON, key TEXT)
-  returns JSON AS $$
-    return JSON.stringify( obj[key] );
-  $$ LANGUAGE plv8;
-
-SELECT get_json_key(entry, 'bopomofo') FROM moe;
--- "ㄇㄥˊ"
-~~~
-
-## plv8x: Operators
-
-~~~ sql
-SELECT entry ~> '@bopomofo' FROM moe;
--- "ㄇㄥˊ"
-SELECT '@bopomofo' <~ entry FROM moe;
--- "ㄇㄥˊ"
-SELECT ~> 'new Date';
--- "2013-04-17T12:31:57.523Z"
-~~~
-
-## plv8x: Modules
-
-~~~ php
-npm i -g uax11
-plv8x -i uax11
-plv8x -E 'require "uax11" .toFullwidth "méng"'
-# ｍｅ́ｎｇ
-~~~
-
-~~~ sql
-SELECT entry ~> 'require "uax11" .toFullwidth @pinyin'
-  FROM moe;
--- "ｍｅ́ｎｇ"
-~~~
-
-## plv8x: Functions
-
-~~~ php
-plv8x -f 'text fullwidth(text)=uax11:toFullwidth'
-plv8x -f 'text PINYIN_UPCASE(json)=:&0.pinyin.toUpperCase!'
-~~~
-
-~~~ sql
-SELECT fullwidth('TÂN Pek-tiong');
--- ＴＡ̂Ｎ　Ｐｅｋ－ｔｉｏｎｇ
-SELECT fullwidth( PINYIN_UPCASE(entry) ) FROM moe;
--- ＭＥ́ＮＧ
-~~~
-
-## Summary
-
-* …`V8`: JavaScript engine
-* …`PLV8`: Stored procedures in JavaScript
-* …`plv8x`: Package manager for PLV8
-    * …Turns **Node.js** modules into **SQL functions**
-    * …**JSON** expressions with `~>` and `<~`
-* …Code reuse for **browser** + **server** + **database** !
-
-## Cutting out the Middleware
-
-* Serve JSON **API** from SQL
-* …Shared **models** & **validation** code
-* …Put **Business Logic** into DB
-* …Perfect fit for **Medium Data**&trade;
-
-## @clkao++
-![](pictures/g0v.tw.png)
-
-## 2012.10.21.
-{:.cover #g0v-openhack}
-
-![](pictures/g0v-openhack.png)
-
-## $4.5M, 41 seconds
-{:#g0v-burn}
-
-![](pictures/g0v-burn.png)
-
-## budget.g0v.tw
-{:#g0v-prototype}
-
-![](pictures/g0v-prototype.png)
-
-## budget.g0v.tw
-{:#g0v-50k}
-
-![](pictures/g0v-50k.png)
-
-## Hackathon
-{:#g0v-hackathon}
-
-![](pictures/g0v-hackathon.png)
-
-## Hackathon Loop
-{:#g0v-hack-loop}
-
-![](pictures/g0v-hackloop.png)
-
-## Hackath[0-3]+n
-
-* 第零次**動員戡亂**黑客松 
-* …第壹次**公地放領**黑客松
-* …第壹之壹次**耕者有其田**黑客松
-* …第貳次**九大建設**黑客松
-* …第參次**客廳工廠**黑客松
-
-## g0v.tw/about.html
-{:#g0v-about}
-
-<a target="_blank" href="http://g0v.tw/about.html">![](pictures/g0v-about.png)</a>
-
-## g0v.tw/about.html
-{:#g0v-tldr}
-
-<a target="_blank" href="http://g0v.tw/about.html">![](pictures/g0v-tldr.png)</a>
-
-## Decentralization
-{:.cover #decentralization}
-
-![](pictures/g0v-decentralization.png)
+![](pictures/canvas.png)
 
 ## 3du.tw
 {:.cover #3du}
@@ -454,6 +352,13 @@ SELECT fullwidth( PINYIN_UPCASE(entry) ) FROM moe;
 </figure>
 
 ## .…and the Very Crazy
+{:.autosize #very-crazy-2}
+
+* 不需登入的網頁，會自動把你登出！
+
+![](pictures/dict-logout-2.png)
+
+## .…and the Very Crazy
 {:.autosize}
 
 * 不需登入的網頁，會自動把你登出！
@@ -483,7 +388,7 @@ SELECT fullwidth( PINYIN_UPCASE(entry) ) FROM moe;
 * …**Parse** HTML into JSON & SQLite ___(@kcwu)___
 * ……and for those **24x24 bitmaps**...
 
-## ←&#x1f01d; `Big-5`<br>→&#x1f00e; `UTF-8`
+## &#x1f01d;←`Big-5`<br>&#x1f00e;→`UTF-8`
 {:.shout #big5-utf8}
 
 ## Crowd-OCR for 1000+ glyphs
@@ -719,7 +624,6 @@ Thanks to: ___@happyman, @Irvin, @hit1205, @MissleTW, @YuerLee, @YuanChao, @clka
 ## PgREST: MongoLab API Server
 
 * GET `/collections/table_or_view`
-    * ?q=<query>&c=true&f=<fields>&fo=true&s=<order>&sk=<skip>&l=<limit>
 
 ~~~ php
 curl $LY/collections/bills?q={"proposal.0":"吳育昇"}
