@@ -34,7 +34,7 @@ style: |
         margin-top: 90px;
         margin-left: -35px;
     }
-    #blackout h2 {
+    #x-blackout h2 {
         margin-top: -70px;
         margin-left: -30px;
     }
@@ -661,8 +661,8 @@ curl $MOE/collections/entries
 <b>English, French & German</b> translations! ___(@a-tsioh)___
 <a target="_blank" href="https://www.moedict.tw/#外文">![](pictures/def-xref.png)</a>
 
-## Blackout, 2013.6.4.
-{:.cover #blackout}
+## TW SOPA Blackout, 2013.6.4.
+{:#blackout}
 
 <a target="_blank" href="https://www.moedict.tw/stop-taiwan-sopa/">![](pictures/stop-tw-sopa.png)</a>
 
@@ -670,6 +670,31 @@ curl $MOE/collections/entries
 
 <b>Hakka</b> Dictionary with **14k** entries! ___(@a-tsioh, @pcchen)___
 <a target="_blank" href="https://www.moedict.tw/#:%E5%AF%A7%E8%B3%A3%E7%A5%96%E5%AE%97%E7%94%B0%EF%BC%8C%E4%B8%8D%E5%BF%98%E7%A5%96%E5%AE%97%E8%A8%80%EF%BC%9B%E5%AF%A7%E8%B3%A3%E7%A5%96%E5%AE%97%E5%9D%91%EF%BC%8C%E4%B8%8D%E5%BF%98%E7%A5%96%E5%AE%97%E8%81%B2">![](pictures/hakka-demo.png)</a>
+
+## 2013.7.
+
+TODO: Tweets before each improvements
+Bootstrap 3
+Fira Sans
+HanaZ
+Stroke c9s++
+
+## 2013.8.1.
+
+canvas stroke
+caasi++
+
+## Downstream Applications
+
+中州韻
+酷音 #blocked by license
+
+## Future Directions
+
+su-lip
+部件
+variations
+etymology
 
 ## Lessons Learned
 
