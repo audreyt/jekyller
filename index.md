@@ -711,11 +711,12 @@ curl $MOE/collections/entries
 
 ## Re-Design Complete, 2013.7.29.
 
-* Font: **Fira Sans** ___(@mozillaorg)___
-* Audio: **Howler.js** ___(@goldfirestudios)___
 * Style: **Bootstrap 3** ___(@twbootstrap)___
-* Icon: **FontAwesome** ___(@fortawesome)___
-* Calligraphy: **strokeWords.js** ___(@c9s, @caasih)___
+* …Font: **Fira Sans** ___(@mozillaorg)___
+* …Audio: **Howler.js** ___(@goldfirestudios)___
+* …Icons: **FontAwesome** ___(@fortawesome)___
+* …Typography: **Han.css** ___(@ethantw)___
+* …Calligraphy: **StrokeWords.js** ___(@c9s, @caasih)___
 
 ## Future Directions
 
