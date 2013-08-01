@@ -15,8 +15,7 @@ default_body_class: list
 author:
     name: Audrey Tang
     company:
-        name: COSCUP.tw 2013
-        # url:  http://example.com/
+        name: COSCUP 2013
 
 fork_url: https://github.com/audreyt/moedict-webkit
 progress: true

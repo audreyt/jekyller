@@ -3,6 +3,11 @@
 layout: default
 
 style: |
+    #canvas canvas {
+        width: 233px !important;
+        height: 233px !important;
+        margin-right: 5px !important;
+    }
     #_ h2 a {
         border-bottom: 1px dotted #eee;
         color: white;
@@ -318,6 +323,8 @@ style: |
 {:#canvas}
 
 ![](pictures/canvas.png)
+<script src="stroke.min.js"></script>
+<script src="main.js"></script>
 
 ## 3du.tw
 {:.cover #3du}
@@ -688,6 +695,7 @@ caasi++
 
 中州韻
 酷音 #blocked by license
+...simptrad 僑胞...
 
 ## Future Directions
 
