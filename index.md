@@ -95,10 +95,24 @@ style: |
     .wrap pre {
         white-space: normal !important
     }
+    .slide.cover li em {
+        color: #EEE;
+        font-style: normal;
+        font-family: 'Fira Sans Light', sans-serif !important;
+    }
     .slide.cover h2 {
         color: #EEE;
         margin-top: -30px;
         margin-left: -40px;
+    }
+    #rough-consensus.shout div h2 em {
+        font-style: normal;
+        font-family: 'Fira Sans Regular', sans-serif !important;
+    }
+    #rough-consensus.shout div h2 {
+        font-size: 100px;
+        font-family: 'Fira Sans Medium', sans-serif !important;
+        font-weight: normal !important;
     }
     #big5-utf8.shout div h2 {
         font-family: 'G0V Logo', 'Fira Sans Light', sans-serif !important;
@@ -408,6 +422,9 @@ style: |
 Thanks to: ___Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, Daniel Liang, Grey Lee, Irvin Chen, Gugod, Schee…___
 ![](pictures/unimap.png)
 
+## *Rough Consensus*<br>*&amp;* Running Code
+{:.shout #rough-consensus}
+
 ## 粗略の共識<br>進擊の程式
 {:.shout #rough-consensus-running-code}
 
@@ -503,8 +520,13 @@ Thanks to: ___Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, 
 * …Freezes **IE8**, crashes **IE7**
     * …Broken on **Android 2.x**, too
 * …So let's **pre-segment** on server
-    * …Needs a tool to **move JS into DB**
-    * …...wait, we just got one here
+    * …`require 'webworker-threads'`
+    * …8 ✕ Core i7-3720QM = 1524.60s!
+
+## Materialized View: 160k .json files
+{:.vertical-top}
+
+![](pictures/drobo.jpg)
 
 ## /a/文字.json
 {:.wrap}
@@ -516,11 +538,6 @@ Thanks to: ___Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, 
 ## Live Demo, part II
 
 <a target="_blank" href="https://moedict.tw/#文字">![](pictures/wenzi.png)</a>
-
-## Materialized View: 160k .json files
-{:.vertical-top}
-
-![](pictures/drobo.jpg)
 
 ## Let's PhoneGap it!
 
@@ -663,9 +680,19 @@ curl $MOE/collections/entries
 <b>Bân-lâm-gi</b> with cross-referencing and pronounciations!
 <a target="_blank" href="https://moedict.tw/#!文">![](pictures/twblg-bun.png)</a>
 
+## Moe Avatar, 2013.4.29.
+{:.cover #avatar}
+
+* ___@miau715++___
+![](pictures/avatar.jpg)
+
+## PLIDAM4, 2013.5.13.
+
+![](pictures/plidam.png)
+
 ## g0v prehackath3n, 2013.5.23.
 
-<b>English, French & German</b> translations! ___(@a-tsioh)___
+<b>English, French & German</b> translations! ___(@Hugo_Lz, @a-tsioh)___
 <a target="_blank" href="https://www.moedict.tw/#外文">![](pictures/def-xref.png)</a>
 
 ## TW SOPA Blackout, 2013.6.4.
