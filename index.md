@@ -705,31 +705,25 @@ curl $MOE/collections/entries
 <b>Hakka</b> Dictionary with **14k** entries! ___(@a-tsioh, @pcchen)___
 <a target="_blank" href="https://www.moedict.tw/#:%E5%AF%A7%E8%B3%A3%E7%A5%96%E5%AE%97%E7%94%B0%EF%BC%8C%E4%B8%8D%E5%BF%98%E7%A5%96%E5%AE%97%E8%A8%80%EF%BC%9B%E5%AF%A7%E8%B3%A3%E7%A5%96%E5%AE%97%E5%9D%91%EF%BC%8C%E4%B8%8D%E5%BF%98%E7%A5%96%E5%AE%97%E8%81%B2">![](pictures/hakka-demo.png)</a>
 
-## 2013.7.
+## Re-Design Begins, 2013.6.29.
 
-TODO: Tweets before each improvements
-Bootstrap 3
-Fira Sans
-HanaZ
-Stroke c9s++
+![](pictures/redesign.png)
 
-## 2013.8.1.
+## Re-Design Complete, 2013.7.29.
 
-canvas stroke
-caasi++
-
-## Downstream Applications
-
-中州韻
-酷音 #blocked by license
-...simptrad 僑胞...
+* Font: **Fira Sans** ___(@mozillaorg)___
+* Audio: **Howler.js** ___(@goldfirestudios)___
+* Style: **Bootstrap 3** ___(@twbootstrap)___
+* Icon: **FontAwesome** ___(@fortawesome)___
+* Calligraphy: **strokeWords.js** ___(@c9s, @caasih)___
 
 ## Future Directions
 
-su-lip
-部件
-variations
-etymology
+* Queries with **Romanization**
+* …Ideographic **Decomposition**
+* …**Variants** and **Idioms**
+* …**Aboriginal** Dictionaries
+* …Official **CC license**? ___(@MoE)___
 
 ## Lessons Learned
 
@@ -758,7 +752,7 @@ etymology
 
 ## Thank you!
 {:.cover}
-![](pictures/stars.jpg)
+![](pictures/avatar.jpg)
 
 ## Thank you!
 {:.cover #answer}
