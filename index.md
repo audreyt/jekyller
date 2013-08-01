@@ -105,12 +105,17 @@ style: |
         margin-top: -30px;
         margin-left: -40px;
     }
-    #rough-consensus.shout div h2 em {
+    #rough-consensus-running-code.shout div h2 em {
         font-style: normal;
-        font-family: 'Fira Sans Regular', sans-serif !important;
+        font-weight: bold;
+        font-family: 'Fira Sans Medium', sans-serif !important;
     }
     #rough-consensus.shout div h2 {
         font-size: 100px;
+        font-family: 'Fira Sans Regular', sans-serif !important;
+    }
+    #rough-consensus.shout div h2 em {
+        font-style: normal;
         font-family: 'Fira Sans Medium', sans-serif !important;
         font-weight: normal !important;
     }
@@ -422,10 +427,10 @@ style: |
 Thanks to: ___Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, Daniel Liang, Grey Lee, Irvin Chen, Gugod, Schee…___
 ![](pictures/unimap.png)
 
-## *Rough Consensus*<br>*&amp;* Running Code
+## Rough Consensus<br>*&amp;* *Running Code*
 {:.shout #rough-consensus}
 
-## 粗略の共識<br>進擊の程式
+## 粗略的共識<br>*進擊の程式*
 {:.shout #rough-consensus-running-code}
 
 ## Applications
@@ -590,7 +595,7 @@ Thanks to: ___Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, 
 * …No **equivalent Mandarin** field for entries
 * …Still uses **bitmaps** for Ext-B+ fonts
 * …Easy to scrape but **hard to parse**
-    * …...as discovered by @happyman_eric
+    * …...as discovered by ___@happyman_eric___
 
 ## g0v hackath2n, 2013.3.23.
 
