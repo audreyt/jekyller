@@ -697,9 +697,10 @@ curl $MOE/collections/entries
 ## Moe Avatar, 2013.4.29.
 {:.cover #avatar}
 
-* ___@miau715++___
-* <cite>000111122333444444555555666f</cite>
 ![](pictures/avatar.jpg)
+
+* …___@miau715++___
+* …<cite>000111122333444444555555666f</cite>
 
 ## PLIDAM4, 2013.5.13.
 
