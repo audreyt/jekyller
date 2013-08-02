@@ -378,18 +378,18 @@ style: |
 </figure>
 
 ## .…and the Very Crazy
-{:.autosize #very-crazy-2}
-
-* 不需登入的網頁，會自動把你登出！
-
-![](pictures/dict-logout-2.png)
-
-## .…and the Very Crazy
 {:.autosize}
 
 * 不需登入的網頁，會自動把你登出！
 
 ![](pictures/dict-logout.png)
+
+## .…and the Very Crazy
+{:.autosize #very-crazy-2}
+
+* 不需登入的網頁，會自動把你登出！
+
+![](pictures/dict-logout-2.png)
 
 ## Yeh's Ping, 2013.1.26.
 

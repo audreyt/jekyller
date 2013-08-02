@@ -8,5 +8,5 @@
             };
             $('#canvas img').hover(draw);
             $('#canvas').on('click', 'canvas', draw);
-            $('#xml- div').hover(function(){ $('#holder').hide() });
+            $('#xml- div, #3du div').hover(function(){ $('#holder').hide() });
         });
