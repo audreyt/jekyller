@@ -6,7 +6,7 @@ pygments: true
 permalink: /:title.html
 kramdown:
   coderay_css: class
-exclude: [shower,themes]
+exclude: [_site]
 
 default_theme: ribbon
 default_lang: en
