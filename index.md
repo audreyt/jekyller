@@ -20,12 +20,17 @@ style: |
         display: block;
         margin-top: -100px;
         font-family: 'G0V Logo', 'Fira Sans Light', sans-serif !important;
-        font-size: 180%;
+        font-size: 300%;
     }
     #_ p {
         font-family: 'Fira Mono', 'Ubuntu Mono', 'Consolas', 'Menlo', "XinGothic-Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", monospace !important;
     }
 
+    cite {
+        font-family: 'chartjunk';
+        font-size: 40px;
+        color: white;
+    }
     #thank-you h2, #answer h2 {
         margin-left: 0;
         margin-top: 0;
@@ -55,6 +60,10 @@ style: |
     @font-face {
         font-family: 'G0V Logo';
         src: url('G0VLogo-Regular.otf?mahjong') format('opentype');
+    }
+    @font-face {
+        font-family: 'chartjunk';
+        src: url('chartjunk.otf') format('opentype');
     }
     @font-face {
         font-family: 'Fira Mono';
@@ -571,7 +580,7 @@ Thanks to: ___Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, 
 ## Personal Motivation
 
 * My main caretakers were my **grandparents**
-    * …Grandma from **Lo̍k-káng**, Taiwan
+    * …Grandma from **Lo̍k-káng**&#x200A;, Taiwan
     * …Grandpa from **Sì-chuān**, China
 * …Raised **biligually** as a pre-schooler
     * …But only Mandarin had a **writing system**
@@ -689,6 +698,7 @@ curl $MOE/collections/entries
 {:.cover #avatar}
 
 * ___@miau715++___
+* <cite>000111122333444444555555666f</cite>
 ![](pictures/avatar.jpg)
 
 ## PLIDAM4, 2013.5.13.
