@@ -8,7 +8,7 @@ kramdown:
   coderay_css: class
 exclude: [_site]
 
-default_theme: ribbon
+default_theme: g0v
 default_lang: en
 default_body_class: list
 
