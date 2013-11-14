@@ -3,6 +3,7 @@
 layout: default
 
 style: |
+    @import('pygments.css');
     #canvas canvas {
         width: 233px !important;
         height: 233px !important;
@@ -324,10 +325,10 @@ style: |
 
 ![](pictures/html5.png)
 
-## 寫程式<br>改造社會
+## 寫程式<br>__改造社會__
 {:.shout #g0v-slogan}
 
-## 拆政府<br>原地重建
+## 拆政府<br>__原地重建__
 {:.shout #g0v-slogan-2}
 
 ## Flash ←
@@ -366,25 +367,18 @@ style: |
 ## The Good
 
 * <strong>**160,000+**</strong> entries
-* …Official, **high quality** sources
-* …Rich **etymology** and historical usage
-* …Full text search with **regular expressions**
-* …Still frequently updated!
+* Official, **high quality** sources
+* Rich **etymology** and historical usage
+* Full text search with **regular expressions**
+* Still frequently updated!
 
 ## The Bad
 
 * Results are **not bookmarkable**
-* …Requires **N clicks** to get to a definition
-* …Rare characters become **low-res bitmaps**
-* …Difficult to use on **mobile devices**
-* …&#x201C;Optimized for **IE 5.0** and **Netscape 4.7+**&#x201D;!?
-
-## The Sad
-
-<figure markdown="1">
-> 本會非常歡迎各位來連結「國語辭典」，但是本會目前只開放以超連結 (hyperlink) 的方式與國語辭典 **首頁** 連結，至於其他方式本會並未對外開放授權。若還有疑問或建議，歡迎來信。 
-<figcaption>／教育部國語推行委員會 〈有關授權〉</figcaption>
-</figure>
+* Requires **N clicks** to get to a definition
+* Rare characters become **low-res bitmaps**
+* Difficult to use on **mobile devices**
+* &#x201C;Optimized for **IE 5.0** and **Netscape 4.7+**&#x201D;!?
 
 ## .…and the Very Crazy
 {:.autosize}
@@ -474,225 +468,14 @@ Thanks to: ___Favonia, Jun-Yuan Yan, Yao Wei, Yaoting Huang, Poka, Caasi Huang, 
 {:.cover #moedict}
 ![](pictures/moedict.png)
 
-## 5 Stars of Open Data
-
-1. ⊙ **Open** License
-2. …↔ **Structured** Data
-3. …▵ **Non-Proprietary** Format
-4. …✧ Each Item has an **URI**
-5. …✩ **Linking** between Items
-
-## URI Endpoints
-
-* `https://moedict.tw/#文字`
-* …3 APIs (for __non-Unicode__ characters):
-    * `/raw/文字.json` ⇒ `{[8ff0]}` 
-    * `/uni/文字.json` ⇒ `⿰亻壯`
-    * `/pua/文字.json` ⇒ `U+F8FF0`
-
-## Web Fonts for Private-Use Area
-
-* Initially based on **Hán Nôm** font ___(@YaoWei)___
-    * Subset everything outside Big5 range
-    * **Hand-drawn** PUA chars like `⿰亻壯`
-* …Later on, switched to **Hanazono** 花園明朝 font
-    * 75,619 + 8,236 glyphs
-    * From 花園大学国際禅学研究所
-
-## 科技始終<br>來自於佛性
-{:.shout #technology-buddha-nature}
-
-## Live Demo
-
-<a target="_blank" href="https://moedict.tw/#文字">![](pictures/wenzi.png)</a>
-
-## Reaching the Fifth Star
-
-1. ⊙ Open License
-2. ↔ Structured Data
-3. ▵ Non-Proprietary Format
-4. ✧ Each Item has an URI
-5. ✩ **Linking between Items**
-
-## Chinese Segmentation
-
-* ThereAreNoWhitespacesBetweenWords
-* …Lots of **heuristic** algorithms
-* …Naive solution: **Longest-token** match
-    * …Requires a large dictionary
-    * …...wait, we just got one here
-
-## In-browser Implementation
-{:.wrap}
-
-~~~ json
-{"4":"一(丁不識|不小心|不扭眾|不拗眾|世之雄|世英名|丘一壑|丘之貉|串驪珠|之為甚|之謂甚|乾二淨|了心願|了百了|了百當|事無成|五一十|人之交|介不取|仍舊貫|代宗匠|代宗臣|代巨擘|代楷模|代風流|代鼎臣|以當十|以貫之|來一往|來二去|依舊式|個勁兒|個子兒|個樣兒|倡三歎|倡百和|偏之見|傅眾咻|償宿願|元大武|元復始|兵一卒|刀一割|刀兩斷|刀兩段|分一毫|切從簡|切現成|切眾生|刻千金|力承當|勇之夫|勞久逸|勞永逸|匡天下|去不返|反常態|口價兒|口兩匙|口咬定|口咬死|古腦兒|名半職|吐為快|吹一唱|呼再諾|呼百應|呼百諾|命嗚呼|哄而上|哄而散|哄而起|哄而集|唱一和|唱三歎|唱百和|喫一添|國三公|國兩制|團和氣|團漆黑|地胡拿|場春夢|塌糊塗|塵不染|壺千金|夔已足|夜無夢|夜無眠|大三大|大二小|
-~~~
-
-## Worked well, but...
-
-* …Freezes **IE8**, crashes **IE7**
-    * …Broken on **Android 2.x**, too
-* …So let's **pre-segment** on server
-    * …`require 'webworker-threads'`
-    * …8 ✕ Core i7-3720QM = 1524.60s!
-
-## Materialized View: 160k .json files
-{:.vertical-top}
-
-![](pictures/drobo.jpg)
-
-## /a/文字.json
-{:.wrap}
-
-~~~ json
-{"h":[{"b":"ㄨㄣˊ ㄗˋ","d":[{"f":"`人類~`用來~`表示~`觀念~、`記錄~`語言~`的~`符號~。","s":"`筆墨~,`翰墨~"},{"f":"`文書~。","q":["`五代史~`平話~．`梁~`史~．`卷~`上~：「`您~`去~`攻破~`宋~`州~，`為我~`奪取~`張~`節使~`歸~`娘~。`才~`得~，`便~`發文~`字~`來~`報~`我~。」","`警世通言~．`卷~`十~`三~．`三~`現身~`包龍圖~`斷~`冤~：「`有~`甚事~`煩惱~？`想~`是~`縣~`裡~`有~`甚~`文字~`不了~。」"]}],"p":"wén zì"}],"t":"`文~`字~"}
-~~~
-
-## Live Demo, part II
-
-<a target="_blank" href="https://moedict.tw/#文字">![](pictures/wenzi.png)</a>
-
-## Let's PhoneGap it!
-
-* …Freezes **XCode**, crashes **Eclipse**
-* …Solution: Pack into 1024 `.txt` files
-    * …Take the first character, `mod 1024`
-    * …Related words share the **same bucket**
-* …Great success!
-
-## Google Play & App Store
-
-![](pictures/google-play.png)
-
-## User-Driven Development
-
-* Wildcard and **part-of-word** searching ___(@esor)___
-* …Two-column layout for **tablets** ___(@hlb)___
-* …**Toggle** between Pinyin and Bopomofo ___(@matic)___
-* …**Simplified** character lookup ___(@xiaofang)___
-* …Top Request: **Taiwanese Bân-lâm-gi**
-
-## twblg.moedict.tw
-{:.cover #twblg}
-![](pictures/seeking.jpg)
-
-## Personal Motivation
-
-* My main caretakers were my **grandparents**
-    * …Grandma from **Lo̍k-káng**&#x200A;, Taiwan
-    * …Grandpa from **Sì-chuān**, China
-* …Raised **biligually** as a pre-schooler
-    * …But only Mandarin had a **writing system**
-    * …Editing her **memoir** brought back memories
-
-## MoE Bân-lâm-gi Dictionary (2011)
-{:.vertical-top}
-![](pictures/twblg.jpg)
-
-## Good Parts
-
-* Unified **Romanization** system (TL)
-* …Standardized **Ideographic** characters (RHC)
-* …Full text search with **Mandarin**, TL & RHC
-* …MP3 **pronounciations** of all 20k entries
-* …Licensed under **CC-BY-ND** 3.0
-
-## Not-so-good Parts
-
-* Entries are in non-bookmarkable **<iframe>**s
-* …No **equivalent Mandarin** field for entries
-* …Still uses **bitmaps** for Ext-B+ fonts
-* …Easy to scrape but **hard to parse**
-    * …...as discovered by ___@happyman_eric___
-
-## g0v hackath2n, 2013.3.23.
-
-![](pictures/twblg-request.jpg)
-
-## Crowd-OCR: 154 glyphs, 2013.3.25.
-
-![](pictures/3du-holohak.png)
-
-## Finished over lunch!
-{:.autosize}
-
-Thanks to: ___@happyman, @Irvin, @hit1205, @MissleTW, @YuerLee, @YuanChao, @clkao, @MGDesigner, @gontera…___
-![](pictures/3du-plurk.png)
-
-## Database received, 2013.3.27.
-
-* `詞目總檔.xls` `詞目總檔.屬性對照.xls`
-* `釋義.xls` `釋義.詞性對照.xls`
-* `又音.xls` `又音.屬性對照.xls`
-* `近義詞對應.xls` `反義詞對應.xls`
-* `詞彙方言差.xls` `語音方言差.xls`
-* `例句.xls`
-
-## ..What about that extra request?
-
-> 您好：<br>
-> 資料匯入目前大致無誤。不過，twblg 網頁上的「華語檢索」，可以用「一乾二淨」找到閩語典的「離離」條目，這個對照表似乎沒有在 Excel 檔中看到？
-
-## Well...
-
-> 語言之間的對譯，不能盡然以詞彙對應，對不夠深入了解的使用者來說，會讓他誤以為A語言的X詞等於B語言的Y詞（並且這種呈現，會被民眾認知為「教育部的辭典說的」）。
-
-
-## However...
-
-> 因此華語對應這個欄位，我們是藏在系統中。<br>
-> 如果是民間的辭典編輯，會比較沒有這個負擔，因此我這裡確實不能給，非常希望你們能有辦法解決。
-
-## ..it's all good.
-
-> 好的，感謝您的提醒和協助。<br>
-> 目前從網頁以 Big5 範圍取出的華語條目，<br>
-> 共有 26274 筆對映。<br>
-> 在應用上，這部份我們會註明不屬於教育部 CC-BY-ND 的授權範圍。
-
-## Data Cleanup, 2013.3.30.
-
-* Convert all .xsl to .csv with **LibreOffice 4**
-	* …3 stars: ▵ **Non-Proprietary Format**
-* …Replace PUA characters with mapped Unicode
-	* …Add `x-造字.csv` and `x-華語對照表.csv	`
-* …Time to put **PgREST** to work!
-
-## PgREST: MongoLab API Server
-
-* GET `/collections/table_or_view`
-
-~~~ php
-curl $LY/collections/bills?q={"proposal.0":"吳育昇"}
-curl $MOE/collections/entries?q={"部首":"一"}&c=1
-~~~
-
-* PUT `/collections/table_or_view`
-
-## PgREST: Import/Export
-
-~~~ php
-pgrest dbname
-export MOE=http://127.0.0.1:3000
-curl -i -X PUT -H "Content-Type: text/csv" \
-   --data-binary @uni/詞目總檔.csv $MOE/collections/entries
-
-curl $MOE/collections/entries
-[{"主編號","1","屬性":"1","詞目":"一","音讀":"tsi̍t",
-  "文白俗替":"替","部首":"一","部首序":"001-00-01","方言差":""}]
-~~~
-
-## PgREST: 3du.tw JSON in 48 lines 
-
-<a target="_blank" href="https://github.com/g0v/moedict-data-twblg/blob/master/gen.ls">https://github.com/g0v/moedict-data-twblg/blob/master/gen.ls</a>
-
-> ![](pictures/twblg-tweet.png)
-
-## OSDC.tw, 2013.4.20.
-
-<b>Bân-lâm-gi</b> with cross-referencing and pronounciations!
-<a target="_blank" href="https://moedict.tw/#!文">![](pictures/twblg-bun.png)</a>
+## Timeline
+
+* …2/1: 網站版上線
+* …2/3: 行動App上架
+* …4/20: 閩南語詞典
+* …5/20: 英/法/德語對照
+* …6/08: 客家語詞典
+* …10/16: 兩岸詞典
 
 ## Moe Avatar, 2013.4.29.
 {:.cover #avatar}
@@ -702,84 +485,34 @@ curl $MOE/collections/entries
 * …___@miau715++___
 * …<cite>000111122333444444555555666f</cite>
 
-## PLIDAM4, 2013.5.13.
+## Crowd-Proofchecking
 
-![](pictures/plidam.png)
+* [萌典啄木鳥](https://www.moedict.tw/dodo/) (__@miau715__, __@ETBlue__, __@kcwu__)
+![](pictures/dodo.png)
 
-## g0v prehackath3n, 2013.5.23.
+## 5602 edits in 18 days!
 
-<b>English, French & German</b> translations! ___(@Hugo_Lz, @a-tsioh)___
-<a target="_blank" href="https://www.moedict.tw/#外文">![](pictures/def-xref.png)</a>
+![](pictures/dodo-result.png)
 
-## TW SOPA Blackout, 2013.6.4.
-{:#blackout}
+## Stroke Animation
 
-<a target="_blank" href="https://www.moedict.tw/stop-taiwan-sopa/">![](pictures/stop-tw-sopa.png)</a>
+* 筆順補完計畫 (__@kcwu__, __@caasi__, __@miaout17__)
+* ...「夯」可用「大」、「力」組成
+* ...需要補上非整字的部件，如「礻」「辶」等
+* ...用 PostGIS 算部件的相似程度
+* ...**國字測繪中心**
 
-## g0v hackath3n, 2013.6.8.
+## Yahoo Hack Taiwan
 
-<b>Hakka</b> Dictionary with **14k** entries! ___(@a-tsioh, @pcchen)___
-<a target="_blank" href="https://www.moedict.tw/#:%E5%AF%A7%E8%B3%A3%E7%A5%96%E5%AE%97%E7%94%B0%EF%BC%8C%E4%B8%8D%E5%BF%98%E7%A5%96%E5%AE%97%E8%A8%80%EF%BC%9B%E5%AF%A7%E8%B3%A3%E7%A5%96%E5%AE%97%E5%9D%91%EF%BC%8C%E4%B8%8D%E5%BF%98%E7%A5%96%E5%AE%97%E8%81%B2">![](pictures/hakka-demo.png)</a>
+> 前一天想到的題目，前兩天剛學的 Three.js，當天早上才拿到資料，一口氣架了五個網站，每個都和活動的主題「解決生活中的問題」 **完全** **沒有** **任何** **關係**，Game Jam 真的很開心！
 
-## Re-Design Begins, 2013.6.29.
-
-![](pictures/redesign.png)
-
-## Re-Design Complete, 2013.7.29.
-
-* Style: **Bootstrap 3** ___(@twbootstrap)___
-* …Font: **Fira Sans** ___(@mozillaorg)___
-* …Audio: **Howler.js** ___(@goldfirestudios)___
-* …Icons: **FontAwesome** ___(@fortawesome)___
-* …Typography: **Han.css** ___(@ethantw)___
-* …Calligraphy: **StrokeWords.js** ___(@c9s, @caasih)___
-
-## Future Directions
-
-* Queries with **Romanization**
-* …Ideographic **Decomposition**
-* …**Variants** and **Idioms**
-* …**Aboriginal** Dictionaries
-* …Official **CC license**? ___(@MoE)___
-
-## Lessons Learned
-
-* …Open Data is a **beginning**, not an end
-* …Keep **conversations** with all participants
-    * …Turn **detractors** into **collaborators**
-        * …Keep a **kind heart**
-            * …Assume the **best intentions**
-
-## 宅心仁厚<br>仁者無敵
-{:.shout #nerds-without-enemies}
-
-## 阿宅無敵
-{:.shout #nerds-invincibility}
-
-## When is Transparency Useful?
-
-<figure markdown="1">
-> 眾人為了共同目標聚在一起，才能做出改變，科技人很難獨力完成。<br>
-> 衡量成功的標準，可以是有多少人的生命因你獲得改善，而不只是有多少人看你架的網站。
-<figcaption>— Aaron Swartz, «Open Government»</figcaption>
-</figure>
-
-## 開站一時<br>開源一輩子
-{:.shout #site-a-time-source-a-lifetime}
-
-## Thank you!
-{:.cover}
-![](pictures/avatar.jpg)
-
-## Thank you!
+## g0v.tw 萌典松
 {:.cover #answer}
 
 <figure markdown="1">
-> 新的轉機和閃閃星斗，<br>
-> 正在綴滿沒有遮攔的天空。<br>
-> 那是五千年的象形文字，<br>
-> 那是未來人們凝視的眼睛。
-<figcaption>／北島 〈回答〉</figcaption>
+* 2013/11/23 (六) 11:00 ~ 20:00<br>
+* 台北市大安區泰順街60巷8號B1<br>
+* http://kktix.com/events/moedict
 </figure>
-![](pictures/stars.jpg)
+![](pictures/avatar.jpg)
 <!-- by-nc-sa orkomedix, https://secure.flickr.com/photos/orkomedix/6812055939 -->
