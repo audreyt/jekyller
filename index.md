@@ -9,6 +9,7 @@ style: |
         margin-right: 5px !important;
     }
     #_ h2 a {
+        display: none;
         border-bottom: 1px dotted #eee;
         color: white;
         line-height: 200%;
@@ -17,6 +18,7 @@ style: |
         font-family: 'EBAS';
     }
     #_ p a {
+        display: none;
         display: block;
         margin-top: -100px;
         font-family: 'G0V Logo', 'Fira Sans Light', sans-serif !important;
@@ -251,6 +253,7 @@ style: |
         color: #333;
         font-style: normal;
     }
+    .slide strong { font-weight: normal }
     .slide ul li strong, .slide ol li strong, b {
         color: #B00;
         font-family: 'Fira Sans Medium', 'Fira Sans OT', 'Fira Sans', 'Ubuntu', 'Source Sans', 'Roboto', "XinGothic-Citicpress", "Lantinghei TC", "Hiragino Kaku Gothic Pro", "Apple LiGothic", "Heiti TC", "LiHei Pro", "Microsoft YaHei", "微軟正黑體", "文泉驿正黑", sans-serif;
@@ -294,67 +297,68 @@ style: |
 
 # [萌典](https://moedict.tw/) {#_}
 
-[G](http://g0v.tw/)
-
-![](pictures/stars.jpg)
-<!-- by-nc-sa orkomedix, https://secure.flickr.com/photos/orkomedix/6812055939 -->
+![](pictures/g0.0v.jpg)
 
 ## 兩個月以來的進度
 {:#recap}
 
-* 萌典啄木鳥 (@miau715, @ETBlue, @kcwu)
-    * 18 天，5602 筆修訂
-    * 共送出 500 頁的 PDF
-* 分類檢索、部首表上線 (@poga, @muan)
-* 離線筆順動畫上線 (@kcwu, @caasi)
-* 漢字標準格式 CSS v2.1 (@ethantw)
+* [萌典啄木鳥](https://www.moedict.tw/dodo/) (__@miau715__, __@ETBlue__, __@kcwu__)
+    * 18 天，5602 筆修訂，共送出 `500 頁` 的 PDF
+* ...分類檢索、部首表 (__@poga__, __@muan__)
+* ...離線筆順動畫 (__@kcwu__, __@caasi__)
+* ...漢字標準格式 CSS v2.1 (__@ethantw__)
+* ...MeeGo 離線版 (__@RSChiang__)
+
+## 筆順動畫
+{:#stroke}
+
+* 離線版 18M → 3.4M (__@kcwu__, __@caasi__)
+* ...部件補缺字資料 (__@miaout17__)
+* ...`TODO`: 使用部件實際長寬組字
+* ...`TODO`: 補上非整字的部件，如礻辶等
+* ...`TODO`: 離線版標題楷書化
+* ..._Needs: Code, Chinese_
 
 ## 兩岸詞典
 {:#csld}
 
 * <https://moedict.tw/~萌> (@bresson, @wjw)
-* Android 已發佈，iOS 審核中
-* TODO: 跨語交叉檢索設計
-* TODO: 排版設計
-* Needs: Design, Testing
-
-## 筆順動畫
-{:#stroke}
-
-* 離線動畫 18M → 3.4M (@kcwu, @caasi)
-* 部件補缺字資料 (@miaout17)
-* TODO: 使用部件實際長寬組字
-* TODO: 補上非整字的部件，如礻辶等
-* Needs: Code, Chinese
+* ...李鍌教授團隊的最新力作: CC-By-ND 3.0
+* ...Android 已發佈，iOS 審核中
+* ...`TODO`: 跨語交叉檢索設計
+* ...`TODO`: 排版設計
+* ..._Needs: Design, Testing_
 
 ## 分享鏈結
 {:#share}
 
-* oEmbed
-* OpenGraph
+* 已加上 Facebook、Twitter、Google Plus 按鈕
+* ...網址去掉 # 號時應傳回 HTML 頁面，如 <https://moedict.tw/萌>
+* ...`TODO`: oEmbed 支援
+* ...`TODO`: OpenGraph 支援
+* ..._Needs: Design, Node, JS_
 
-## 離線語音包
+## 離線版模組化
 {:#audio}
 
-* 各語種成為獨立 App 
+* 各語種成為獨立 App
+* ...`TODO`: 用 URL scheme 互相觸發
+* ...`TODO`: 離線語音包
+* ...`TODO`: Firefox Open Web App
+* ..._Needs: Cordova, iOS, Android, JS_
 
-## 各式各樣的坑
+## 還有各式各樣的坑!
 {:#issues}
 
-* 書籤紀錄 (Design, JS)
-* 字型呈現校正 (Typographer, JS)
-* 手勢操作界面 (UX Design)
-* 全文檢索 (Technical Review)
+* 書籤紀錄: _Design, JS_
+* 字型呈現校正: _Typographer, JS_
+* 手勢操作界面: _UX Design_
+* 全文檢索: _Technical Review_
+* 方塊遊戲: _UX Design_
+* _Needs: Everybody!_
 
-## Thank you!
+## Hack, eat, hack!
 {:.cover #answer}
 
-<figure markdown="1">
-> 新的轉機和閃閃星斗，<br>
-> 正在綴滿沒有遮攔的天空。<br>
-> 那是五千年的象形文字，<br>
-> 那是未來人們凝視的眼睛。
-<figcaption>／北島 〈回答〉</figcaption>
-</figure>
 ![](pictures/stars.jpg)
 <!-- by-nc-sa orkomedix, https://secure.flickr.com/photos/orkomedix/6812055939 -->
