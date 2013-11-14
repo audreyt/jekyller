@@ -10,6 +10,7 @@ style: |
         margin-right: 5px !important;
     }
     #_ h2 a {
+        display: none;
         border-bottom: 1px dotted #eee;
         color: white;
         line-height: 200%;
@@ -18,6 +19,7 @@ style: |
         font-family: 'EBAS';
     }
     #_ p a {
+        display: none;
         display: block;
         margin-top: -100px;
         font-family: 'G0V Logo', 'Fira Sans Light', sans-serif !important;
@@ -295,9 +297,7 @@ style: |
 
 # [萌典](https://moedict.tw/) {#_}
 
-[G](http://g0v.tw/)
-
-![](pictures/stars.jpg)
+![](pictures/g0.0v.jpg)
 <!-- by-nc-sa orkomedix, https://secure.flickr.com/photos/orkomedix/6812055939 -->
 
 ## g0v.tw
@@ -354,11 +354,6 @@ style: |
 ![](pictures/canvas.png)
 <script src="stroke.min.js"></script>
 <script src="main.js"></script>
-
-## 3du.tw
-{:.cover #3du}
-![](pictures/3du.jpg)
-<!-- by Kanko, https://secure.flickr.com/photos/kankan/134663487/ -->
 
 ## Revised MoE Dictionary (1994)
 
